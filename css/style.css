@@ -6,12 +6,16 @@ body {
 	color: #1caa98 !important;
 }
 
+.col-md-4{
+	margin-bottom: 20px;
+}
+
 section{
 	padding: 40px 0 40px 0;
 }
 
 .jumbotron{
-	background: url(../images/site_showcase_bg.jpg) no-repeat top center;
+	background: #1b222a url(../images/site_showcase_bg.jpg) no-repeat top center;
 	color: white;
 	height: 598px;
 	overflow: none;
@@ -46,7 +50,10 @@ section#feature{
 	padding: 40px;
 	overflow: auto;
 }
-
+section#feature ul{
+	margin: 0;
+	padding: 0;
+}
 section#feature ul li{
 	font-size: 22px;
 	list-style: none;
@@ -83,4 +90,67 @@ footer a{
 
 footer p{
 	float: right;
+}
+
+/*Media Queries*/
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 991px){
+	.showcase-image{
+		display: none;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 990px){
+	.jumbotron .app-btn{
+		width: 30%;
+	}
+	.jumbotron{
+		height: 400px !important;
+		background-size: 100% 100%;
+	}
+	
+	.jumbotron h1{
+		margin-top: 10px;
+	}
+}
+
+@media(max-width: 768px){
+	.jumbotron{
+		height: 350px !important;
+		background-size: 100% 100%;
+	}
+	
+	.jumbotron h1{
+		margin: 10px;
+	}
+}
+
+/*smartphone screen size*/
+
+@media(max-width: 500px){
+	.jumbotron{
+		height: 450px !important;
+		background-image: none;
+		text-align: center;
+	}
+	
+	.jumbotron img.app-btn{
+		width: 60%;
+		margin: 0 auto 30 auto;
+		display: block;
+	}
+	
+	section#feature ul li{
+		font-size: 19px !important;
+	}
+	
+	footer{
+		float: none;
+		text-align: center;
+		padding-top: 20px;
+	}
 }
